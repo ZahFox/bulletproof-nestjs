@@ -1,0 +1,10 @@
+# this is intended to be used for development purposes only
+
+version: '3'
+
+services:
+  redis:
+    image: 'redis:alpine'
+    command: redis-server --requirepass changeme
+    ports:
+      - '6379:6379'
